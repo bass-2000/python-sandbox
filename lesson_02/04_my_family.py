@@ -19,6 +19,6 @@ print('Рост отца - ' + str(my_family_height[0][1]) + 'см')
 # Выведите на консоль общий рост вашей семьи как сумму ростов всех членов
 #   Общий рост моей семьи - ХХ см
 all_family_height = 0
-for x in range(0, len(my_family_height)):
+for x, _ in enumerate(my_family_height):
     all_family_height += my_family_height[x][1]
 print('Общий рост моей семьи - ' + str(all_family_height) + 'см')
